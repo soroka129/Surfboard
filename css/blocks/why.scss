@@ -1,0 +1,121 @@
+    .why {
+        padding-top: 9.7%;
+    }
+    .why__wrapper {
+        display: flex;
+        max-width: 68.75rem;
+        max-height: 40.75rem;
+        flex-direction: column;
+        // justify-content: space-between;
+        // min-width: 68.75rem;
+        // min-height: 40.75rem;
+        // height: 100%;
+        padding: 0px 5.5625rem;
+    }
+
+    .why__header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2.75rem;
+
+        &-title {
+            display: block;
+            color: #292929;
+            font-size: 3rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 0.625rem;
+        }
+
+        &-content {
+            text-align: center;
+            padding: 0 24%;
+        }
+    }
+
+        .why__content-list {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+
+            :first-child {
+                padding-left: 0;
+            }
+
+            :last-child {
+                padding-right: 0;
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    
+        .why__content-item {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 19.25rem;
+            height: 17.5rem;
+            padding: 0 4%;
+            flex:1;
+            position: relative;
+
+            &:before {
+                width: 4.1875rem;
+                height: 1.3125rem;
+                content: url('../../img/3circle.svg');
+                position: absolute;
+                top: 3.75rem;
+                right: 0;
+                transform: translateX(50%);
+            }
+            
+            &-wrapper {
+                display: inline-block;
+                width: 8rem;
+                height: 8rem;
+                position: relative;
+                background-color: #F2F5F4;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 0.5rem;
+
+
+                &-title {
+                    display: flex;
+                    align-items: baseline;
+                    color: #292929;
+                    font-size: 1.6875rem;
+                    font-weight: 700;
+                    margin-bottom: 0.8125rem;
+                }
+
+                &-inform {
+                    // display: flex;
+                    // align-items: baseline;
+                    width: 17.6875rem;
+                    font-weight: 300;
+                    text-align: center;
+                }
+            }
+        }
+        
+        .why__content-icon {
+            width: 4.25rem;
+            height: 4.25rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    

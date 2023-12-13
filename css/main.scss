@@ -1,0 +1,25 @@
+// z-indexes
+$z-fixed-munu: 100;
+
+
+@import url("./layout/normalize.css");
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+@import "base";
+@import "blocks/button";
+
+@import "blocks/welcome";
+@import "blocks/header";
+@import "blocks/welcome__content";
+@import "blocks/paginator.scss";
+@import "blocks/welcome__footer";
+@import "blocks/section.scss";
+@import "blocks/why";
+@import "blocks/reviews.scss";
+@import "blocks/interactive-avatar.scss";
+@import "blocks/form.scss";
+@import "blocks/form-controls";
+@import "blocks/fixed-menu";
+@import "blocks/media.scss";
+
+// 
+// @import url('./blocks/form.css');

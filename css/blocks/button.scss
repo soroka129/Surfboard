@@ -1,0 +1,31 @@
+.button:hover {
+    background:  #FFD517;
+}
+
+.button {
+    color: #000;
+    font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.125rem;
+    // text-transform: uppercase;
+    text-align: center;
+    padding: 1.3125rem 2.5625rem;
+    border-radius: 6.25rem;
+    border: none;
+    background: #FEDB3F;
+    width: 9.75rem;
+    // height: 60px;
+    cursor: pointer;
+
+    &-transparent {
+        background: transparent;
+        color: #fff;
+        text-transform: none;
+
+        &:hover {
+            background: none;
+            color: #FEDB3F;
+
+        }
+    }
+}

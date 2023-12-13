@@ -1,0 +1,141 @@
+.reviews {
+    display: flex;
+    // flex-shrink: 0;
+    justify-content: center;
+    /*margin-top: 100px;
+    margin-bottom: 95px;*/
+
+    &__wrapper {
+        display: flex;
+        max-width: 68.75rem;
+        max-height: 40.75rem;
+        // min-width: 68.75rem;
+        // min-height: 40.75rem;
+        // height: auto;
+        flex-direction: column;
+        // justify-content: center;
+        /* align-items: center; */
+        padding: 0 5rem;
+        // margin: auto;
+    }
+    &__title {
+        display: block;
+        color: #292929;
+        font-size: 3rem;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 1.625rem;
+    }
+}
+.reviews__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // padding: 42px;
+    // width: 940px;
+    height: auto;
+    // background: #F8FAF9;
+
+    &-display{
+        background: #F8FAF9;
+        padding: 2.625rem 2.375rem;
+    }
+
+    &-inner {
+        display: flex;
+    }
+
+    &-avatar {
+        // display: block;
+        width: 15.8125rem;
+        height: 16.5rem;
+        // margin-right: 40px;
+
+        &-image {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-article {
+        flex: 1;
+        margin-left: 2.5rem;
+
+        &-title {
+            color: #292929;
+            font-size: 1.6875rem;
+            font-weight: 700;
+            margin-top: 1.625rem;
+            margin-bottom: 0.625rem;
+        }
+
+        &-text {
+            line-height: 1.26;
+            width: 83%;
+        }
+
+        &-name {
+            color: #292929;
+            font-weight: 500;
+            line-height: 1.5rem;
+            margin-top: 1.375rem;
+        }
+
+    }
+}
+
+
+.paginator__reviews {
+    display: flex;
+    margin-top: 1.875rem;
+    justify-content: center;
+    margin-top: 0.9375rem;
+
+    &-list {
+        display: inline-flex;
+        justify-content: center;
+        column-gap: 0.375rem;
+    }
+
+    &-item {
+        display: flex;
+        width: 4.625rem;
+        height: 4.625rem;
+        border: 0.375rem solid transparent;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        // justify-content: center;
+        // align-items: center;
+
+        /*:active {
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            border: 6px solid #FEDB3F;
+        } */
+
+        &-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+        }
+
+    }
+
+    &-icon {
+        display: block;
+        /*width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        overflow: hidden;*/
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

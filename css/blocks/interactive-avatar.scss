@@ -1,0 +1,28 @@
+.interactive-avatar {
+    width: 74px;
+    height: 74px;
+    border: 6px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    &-active {
+        background-color:#FEDB3F;
+    }
+
+    &-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+    }
+}
+
+.paginator__reviews-icon {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
