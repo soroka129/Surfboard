@@ -1,11 +1,29 @@
 // z-indexes
+$containerWidth: 1100px;
+$baseFontSize: 16px;
 $z-fixed-munu: 100;
 
+$tablets: 768px;
+$phone: 480px;
+
+@mixin tabl () {
+    @media screen and (max-width: $tablets) {
+        @content;
+    }
+ }
+
+ @mixin teleph {
+    @media screen and (max-width: $phone) {
+        @content;
+    }
+ }
 
 @import url("./layout/normalize.css");
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 @import "base";
 @import "blocks/button";
+@import "blocks/hamburger.scss";
+@import "blocks/media.scss";
 
 @import "blocks/welcome";
 @import "blocks/header";
@@ -18,8 +36,14 @@ $z-fixed-munu: 100;
 @import "blocks/interactive-avatar.scss";
 @import "blocks/form.scss";
 @import "blocks/form-controls";
+@import "blocks/map.scss";
 @import "blocks/fixed-menu";
 @import "blocks/media.scss";
+
+
+// @import "blocks/media768.scss";
+// @import "blocks/media480.scss";
+
 
 // 
 // @import url('./blocks/form.css');

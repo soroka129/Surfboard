@@ -17,6 +17,11 @@
         /* align-items: center; */
         padding: 0 5rem;
         // margin: auto;
+
+        @include tabl {
+            width: 95%;
+            padding: 0;
+        }
     }
     &__title {
         display: block;
@@ -26,9 +31,13 @@
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 1.625rem;
+
+        @include tabl {
+            margin-bottom: 3.625rem;
+        }
     }
 }
-.reviews__content{
+.reviews__content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,6 +46,10 @@
     height: auto;
     // background: #F8FAF9;
 
+    @include tabl {
+        width: 100%;
+    }
+
     &-display{
         background: #F8FAF9;
         padding: 2.625rem 2.375rem;
@@ -44,6 +57,11 @@
 
     &-inner {
         display: flex;
+
+        @include tabl {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &-avatar {
@@ -51,6 +69,11 @@
         width: 15.8125rem;
         height: 16.5rem;
         // margin-right: 40px;
+
+        @include tabl {
+            width: 8.125rem;
+            height: 8.125rem;
+        }
 
         &-image {
             object-fit: cover;
@@ -63,17 +86,34 @@
         flex: 1;
         margin-left: 2.5rem;
 
+        @include tabl {
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
         &-title {
+            text-align: center;
             color: #292929;
             font-size: 1.6875rem;
             font-weight: 700;
             margin-top: 1.625rem;
             margin-bottom: 0.625rem;
+
+            @include tabl {
+                margin-top: 2.125rem;
+                margin-bottom: 0.825rem;
+            }
         }
 
         &-text {
             line-height: 1.26;
             width: 83%;
+
+            @include tabl {
+                width: 100%;
+                text-align: center;
+            }
         }
 
         &-name {
@@ -81,6 +121,11 @@
             font-weight: 500;
             line-height: 1.5rem;
             margin-top: 1.375rem;
+
+            @include tabl {
+                width: 100%;
+                text-align: center;
+            }
         }
 
     }
@@ -92,6 +137,10 @@
     margin-top: 1.875rem;
     justify-content: center;
     margin-top: 0.9375rem;
+
+    @include tabl {
+        margin-top: 2.5rem;
+    }
 
     &-list {
         display: inline-flex;

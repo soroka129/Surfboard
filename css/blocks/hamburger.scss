@@ -1,0 +1,22 @@
+.hamburger {
+    display: inline-flex;
+    display: none;
+    width: 26px;
+    height: 24px;
+    flex-direction: column;
+    justify-content: space-between;
+    // align-items: center;
+
+    @include tabl {
+        display: inline-flex;
+        margin-top: 8px;
+    }
+
+    &__plank {
+        display: block;
+        background: #fff;
+        height: 4px;
+        border-radius: 10px;
+    }
+
+}

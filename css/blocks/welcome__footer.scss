@@ -8,18 +8,30 @@
         :last-child {
             margin-right: 0;
             }
+         
+    @include tabl {
+        display: none;
+    }
+
     }
 
     &-item {
         display: flex;
         flex-wrap: nowrap;
-        margin-right: 1.825rem;
-
+        margin-right: 2.125rem;
     }
+
     &-icon {
         height: 2.5625rem;
         width: 2.5625rem;
         margin-right: 0.6875rem;
+
+        &-elem {
+            fill: #fff;
+            height: 2.5625rem;
+            width: 2.5625rem;
+            // stroke: #fff;
+        }
     }
 
     &-text {
@@ -27,9 +39,17 @@
         font-size: 1rem;
         font-weight: 700;
         line-height: 1.125rem;
+        margin-left: 10px;
     }
 }
 
+.welcome__foote-icon-elem {
+    display: flex;
+    fill: #fff;
+    height: 2.5625rem;
+    width: 2.5625rem;
+    stroke: #fff;
+}
 
 /*.welcome__footer-list {
     display: inline-flex;

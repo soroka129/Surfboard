@@ -21,7 +21,11 @@
         /* align-items: center; */
         margin: auto;
 
-        // padding-top: 1rem;
+        @include tabl {
+            width: 95%;
+            padding: 0;
+            margin: 0;
+        }
     }
 
     &__title {
@@ -32,6 +36,14 @@
         text-align: center;
         text-transform: uppercase;
         margin-bottom: 3.0625rem;
+
+        @include tabl {
+            margin-bottom: 1.7rem;
+        }
+
+        @include teleph {
+            font-size: 2.5rem;
+        }
     }
 }
 
@@ -39,12 +51,28 @@
         display: flex;
         padding: 0 5.3125rem;
 
+        @include tabl {
+            flex-direction: column;
+            padding: 0 9.5rem 0 8rem;
+        }
+
+        @include teleph {
+            flex-direction: column;
+            padding: 0 2% 0 2%;
+        }
+
         &-right {
+            width: 50%;
             flex: 1;
             margin-right: 1.125rem;
             display: flex;
             flex-direction: column;
             // padding-left: 81px;
+            
+        @include tabl {
+            width: 100%;
+            margin-right: 0;
+        }
 
             &-topline {
                 display: flex;
@@ -70,11 +98,16 @@
                 color: #000;
                 font-size: 0.875rem;
                 line-height: 1.25rem;
-                width: 29.3125rem;
+                // width: 29.3125rem;
                 height: 3.625rem;
                 padding-left: 1px;
                 border-radius: 0.3125rem;
                 margin-top: 0.8125rem;
+
+                @include tabl {
+                    width: 100%;
+                    margin-top: 1.2rem;
+                }
 
                 .form__blok {
                     margin-right: 0;
@@ -85,6 +118,11 @@
                 display: flex;
                 justify-content: space-between;
                 margin-top: 1.8125rem;
+
+                
+                @include tabl {
+                    margin-top: 0.9rem;
+                }
 
                 :last-child {
                     margin-right: 0;
@@ -104,13 +142,31 @@
         }
 
         &-left {
+            width: 50%;
             flex: 1;
             display: flex;
             flex-direction: column;
             // padding-right: 80px;
 
+            @include tabl {
+                align-items: center;
+                margin-top: 0.9rem;
+                width: 100%;
+            }
+
+            &-topline {
+                @include tabl {
+                    width: 100%;
+                }
+            }
+
             &-midleline {
                 margin-top: 2rem;
+                width: 100%;
+
+                @include tabl {
+                    margin-top: 1.2rem;
+                }
             }
         }
 }
@@ -118,6 +174,10 @@
 .form__blok {
     flex: 1;
     margin-right: 1rem;
+
+    @include tabl {
+        margin-right: 3.5%;
+    }
 
     &:last-child {
     mask-repeat: 0;
@@ -137,6 +197,11 @@
     border: solid 0.1875rem transparent;
     padding: 1.125rem 0.75rem;
 
+    @include tabl {
+        max-height: 3.625rem;
+        padding: 0.5rem 0.5rem;
+    }
+
     &:focus {
         border-color: #FEDB3F;
         outline: none;
@@ -146,11 +211,23 @@
         height: 9.5rem;
         resize: none;
 
+        @include tabl {
+            max-height: 5.425rem;
+        }
     }
 }
 
 .form__buttons {
     margin-top: 1.625rem;
+    
+    @include tabl {
+        margin-top: 0.9rem;
+        margin-left: rem(70px);
+        }
+
+        @include teleph {
+            margin-left: 0; 
+        }
 
     & >.button {
         margin-left: -0.75rem;

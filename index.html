@@ -12,6 +12,7 @@
 <body>
     <div class="wrapper">
         <section class="welcome welcome__background">
+          <div class="tablet__background"></div>  
           <div class="container">  
             <heder class="header">
                 <a href="./index.html" class="logo__link"><img src="./img/logo.svg" width="55" height="39" alt="Surf board"></a>
@@ -40,12 +41,21 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="tel:+78009039090" class="contacts__tel">
-                    <span class="contacts__tel-icon">
+                <a href="tel:+78009039090" class="contacts__tel contacts__tel-header">
+                    <!-- <span class="contacts__tel-icon"> 
                         <img src="img/handset.svg" width="16" height="16" class="contacts__tel-icon-elem" alt="">
-                    </span>
+                    </span>-->
+                    <svg class="contacts__tel-icon">
+                        <use xlink:href="./img/sprite.svg#phone" class="tel-icon"></use>
+                    </svg>
                     <span class="contacts__tel-text">8 800 903 90 90</span>
                 </a>
+                <a href="" class="hamburger">
+                    <span class="hamburger__plank"></span>
+                    <span class="hamburger__plank"></span>
+                    <span class="hamburger__plank"></span>
+                </a>
+
             </heder>
             <div class="welcome__content">
                 <div class="welcome__content-wrapper">
@@ -58,25 +68,34 @@
             <div class="welcome__footer">
                 <ul class="welcome__footer-list">
                     <li class="welcome__footer-item feauter">
-                        <div class="welcome__footer-icon">
-                            <img src="img/bullet_icon2.svg" width="41" height="41" alt="Сапборд" class="welcome__foote-icon-elem">
-                        </div>
+                        <!-- <div class="welcome__footer-icon"> -->
+                            <svg class="welcome__foote-icon-elem">
+                                <use xlink:href="./img/sprite.svg#bullet"></use>
+                            </svg>
+                            <!-- <img src="img/bullet_icon2.svg" width="41" height="41" alt="Сапборд" class="welcome__foote-icon-elem"> -->
+                        <!-- </div> -->
                         <div class="welcome__footer-text">
                             <p>Уникальный дизайн</p>
                         </div>
                     </li>
                     <li class="welcome__footer-item feauter">
-                        <div class="welcome__footer-icon">
-                            <img src="img/materials_icon2.svg" width="41" height="41" alt="Станок" class="welcome__foote-icon-elem">
-                        </div>
+                        <!-- <div class="welcome__footer-icon"> -->
+                            <svg class="welcome__foote-icon-elem">
+                                <use xlink:href="./img/sprite.svg#materials"></use>
+                            </svg>
+                            <!-- <img src="img/materials_icon2.svg" width="41" height="41" alt="Станок" class="welcome__foote-icon-elem"> -->
+                        <!-- </div> -->
                         <div class="welcome__footer-text">
                             <p>Прочные материалы</p>
                         </div>
                     </li>
                     <li class="welcome__footer-item feauter">
-                        <div class="welcome__footer-icon">
-                            <img src="img/delivery_icon2.svg" width="41" height="41" alt="Машина" class="welcome__foote-icon-elem">
-                        </div>
+                        <!-- <div class="welcome__footer-icon"> -->
+                            <svg class="welcome__foote-icon-elem">
+                                <use xlink:href="./img/sprite.svg#delivery"></use>
+                            </svg>
+                            <!-- <img src="img/delivery_icon2.svg" width="41" height="41" alt="Машина" class="welcome__foote-icon-elem"> -->
+                        <!-- </div> -->
                         <div class="welcome__footer-text">
                             <p>Быстрая доставка</p>
                         </div>
@@ -93,10 +112,13 @@
                 </div>
                 <div class="why__content">
                     <ul class="why__content-list">
-                        <li class="why__content-item benefit">
+                        <li class="why__content-item">
                             <div class="why__content-item-image">
                                 <div class="why__content-item-wrapper">
-                                    <img src="./img/perfeckt_fit.svg" width="128" height="128" class="why__content-icon">
+                                    <svg class="why__content-icon">
+                                        <use xlink:href="./img/sprite.svg#perfeckt_fit"></use>
+                                    </svg>
+                                    <!-- <img src="./img/perfeckt_fit.svg" width="128" height="128" class="why__content-icon"> -->
                                 </div>
                             </div>
                             <div class="why__content-item-text">
@@ -109,7 +131,10 @@
                         <li class="why__content-item benefit">
                             <div class="why__content-item-image">
                                 <div class="why__content-item-wrapper">
-                                    <img src="./img/strong.svg" width="128" height="128" class="why__content-icon">
+                                    <svg class="why__content-icon">
+                                        <use xlink:href="./img/sprite.svg#strong"></use>
+                                    </svg>
+                                    <!-- <img src="./img/strong.svg" width="128" height="128" class="why__content-icon"> -->
                                 </div>
                             </div>
                             <div class="why__content-item-text">
@@ -122,7 +147,10 @@
                         <li class="why__content-item benefit">
                             <div class="why__content-item-image">
                                 <div class="why__content-item-wrapper">
-                                    <img src="./img/unique.svg" width="128" height="128" class="why__content-icon">
+                                    <svg class="why__content-icon">
+                                        <use xlink:href="./img/sprite.svg#unique"></use>
+                                    </svg>
+                                    <!-- <img src="./img/unique.svg" width="128" height="128" class="why__content-icon"> -->
                                 </div>
                             </div>
                             <div class="why__content-item-text">
@@ -266,12 +294,62 @@
                 </div>
             </div>
         </section>
-        <section class="map">
-
+        <section class="section map">
+            <div class="footer__background"></div>
+            <div class="map__container">
+                <div class="map__mark">
+                    <img src="./img/mark.svg" width="58" height="73" alt="" class="map__mark-elem">
+                </div>
+                <footer class="footer">
+                    <div class="contacts">
+                        <div class="contacts__inf">
+                            <p class="contacts__text">Москва, ул.Новый Арбат, д.31/12</p>
+                        </div>
+                        <a href="tel:+78009039090" class="contacts__tel">
+                            <!-- <span class="contacts__tel-icon">
+                                <img src="img/handset.svg" width="16" height="16" class="contacts__tel-icon-elem" alt="">
+                            </span> -->
+                            <svg class="contacts__tel-icon">
+                                <use xlink:href="./img/sprite.svg#phone"></use>
+                            </svg>    
+                            <span class="contacts__tel-text">8 800 903 90 90</span>
+                        </a>
+                    </div>
+                    <div class="social">
+                        <ul class="social__list">
+                            <li class="social__item">
+                                <a href="#" class="socials__link-vk">
+                                    <svg class="socials__link-vk-icon">
+                                        <use xlink:href="./img/sprite.svg#vk"></use>
+                                    </svg>
+                                </a> 
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="socials__link-fb">
+                                    <svg class="socials__link-fb-icon">
+                                        <use xlink:href="./img/sprite.svg#fb"></use>
+                                    </svg>
+                                </a> 
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="socials__link-in">
+                                    <svg class="socials__link-in-icon">
+                                        <use xlink:href="./img/sprite.svg#in"></use>
+                                    </svg>
+                                </a> 
+                            </li>
+                            <li class="social__item">
+                                <a href="#" class="socials__link-tw">
+                                    <svg class="socials__link-tw-icon">
+                                        <use xlink:href="./img/sprite.svg#tw"></use>
+                                    </svg>
+                                </a> 
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
         </section>
-        <footer>
-
-        </footer>
     </div>
     <div class="fixed-menu">
         <ul class="fixed-menu__list">

@@ -2,6 +2,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    @include teleph {
+        justify-content: center;       
+    }
+
     &:last-child {
         margin-right: 0;
     }
@@ -14,6 +18,11 @@
     user-select: none;
     margin-right: 1.1875rem;
     margin-bottom: 1.125rem;
+
+    @include tabl {
+        margin-bottom: 1.6rem;
+        margin-right: 1.5rem;
+    }
 
     &-checkbox {
         .radio__visible {

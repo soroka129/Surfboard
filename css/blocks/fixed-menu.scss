@@ -1,8 +1,12 @@
 .fixed-menu {
     position: fixed;
     top: 22%;
-    right: 17%;
+    right: 5%;
     z-index: $z-fixed-munu;
+
+    @include tabl {
+        display: none;
+    }
 
     &__item {
         margin-bottom: 0.1875rem;

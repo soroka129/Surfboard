@@ -3,8 +3,16 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-size: 16px;
+    font-size: $baseFontSize;
 
+    @include tabl {
+        font-size: $baseFontSize - 1px;
+    }
+
+    @include teleph {
+        font-size: $baseFontSize - 3px;
+    }
+    
 }
 
 body {
@@ -21,6 +29,7 @@ body {
 }
 
 .wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,6 +37,7 @@ body {
     // position: relative;
     overflow: hidden;
     width: 100%;
+    min-height: 100%;
 }
 
 /*.container {
