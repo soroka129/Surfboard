@@ -305,7 +305,7 @@ footer {
 
 .welcome__menu {
   padding-left: 0;
-  margin: 0 2.5rem;
+  margin: 0 1.875rem;
   padding-top: 5px;
 }
 @media screen and (max-width: 768px) {
