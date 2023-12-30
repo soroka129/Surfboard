@@ -40,6 +40,7 @@
         left: 0;
         width: 100%;
         height: 100%;
+        z-index: 1;
      }
 
     &__title {
@@ -67,9 +68,10 @@
     justify-content: center;
     align-items: center;
     background: #fff;
-    width: rem(309px);
+    width: min-rem(309px);
     height: rem(176px);
     flex-shrink: 0;
+    padding: 10px;
 
     &-text {
         color: #000;
@@ -270,4 +272,16 @@
         font-weight: 400;
         line-height: normal;
     }
+}
+
+.input-error {
+    border-color: red;
+}
+
+.error-modal {
+    color: red;
+}
+
+.modal-success {
+    color: green;
 }

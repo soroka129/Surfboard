@@ -28,6 +28,11 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.body-nonScrol {
+    height: 100%;
+    overflow: hidden;
+}
+
 .wrapper {
     position: relative;
     display: flex;

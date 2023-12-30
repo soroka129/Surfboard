@@ -1,0 +1,10 @@
+.HowWeWork {
+    background-color: #F8FAF9;
+
+    &__wrapper {
+        display: flex;
+        max-width: 68.75rem;
+        max-height: 40.75rem;
+        padding: 0 5rem;
+    }
+}

@@ -1,3 +1,13 @@
+.bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    padding-top: rem(125px);
+}
+
+.bx-viewport {
+    min-height: 100%;
+}
 .product {
     background-color: #F8FAF9;
     // padding: 0;
@@ -27,7 +37,7 @@
         justify-content: space-between;
         position: relative;
         left: 0px;
-        width: 100%;
+        // width: 100%;
         transition: 0.5s;
         margin-top: rem(90px);
 
@@ -69,8 +79,8 @@
 
         &-elem {
             position: absolute;
-            width: 370px;
-            height: 560px;
+            width: rem(370px);
+            height: rem(560px);
             transform: rotate(3deg);
             background: url('../../img/sprite.svg#spot') center center no-repeat;
 
