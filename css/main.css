@@ -922,6 +922,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   max-width: 68.75rem;
   height: 100%;
   padding: 0% 2%;
@@ -938,11 +941,9 @@ footer {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: relative;
   left: 0px;
+  width: 990px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-top: 5.625rem;
@@ -959,6 +960,9 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   height: 100%;
   -ms-flex-negative: 0;
@@ -1243,6 +1247,7 @@ footer {
 .btn-left {
   position: absolute;
   top: 50%;
+  left: 5%;
   width: 24px;
   height: 40px;
   z-index: 10;
@@ -1250,14 +1255,14 @@ footer {
 @media screen and (max-width: 768px) {
   .btn-left {
     top: 21%;
-    left: 17%;
+    left: 5%;
   }
 }
 
 .btn-right {
   position: absolute;
   top: 50%;
-  right: 3.125rem;
+  right: 5%;
   width: 24px;
   height: 40px;
   z-index: 10;
@@ -1265,7 +1270,7 @@ footer {
 @media screen and (max-width: 768px) {
   .btn-right {
     top: 21%;
-    right: 17%;
+    right: 5%;
   }
 }
 

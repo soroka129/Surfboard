@@ -34,20 +34,49 @@ $('.team__member').on('click', function(){
 });
 
 // Слайдер секция produck
-const slider = $(".product__list").bxSlider({
-            pager:false,
-            controls:false,
-            responsive:false,
-});
+
+const slider = $(".product__list");
+const sliderItems = document.querySelectorAll('.product__item');
+
+const sliderTransform = (to) => {
+    console.log(to);
+    const sliderWidth = slider.width();
+    console.log(sliderWidth);
+    const currentPosition = +slider.css('left').replace('-', '').replace('px', '');
+    console.log(currentPosition);
+    let index = 0;
+    console.log(sliderItems.length);
+
+    if (to === 'rigth') {
+        if (currentPosition === 0) {
+            index = index + 1;
+            console.log(index);
+        } else if (currentPosition < sliderWidth*(sliderItems.length - 1)) {
+            console.log(sliderItems.length);
+            index = currentPosition / sliderWidth +1;
+        };
+    } else {
+        if (currentPosition === 0) {
+            index = sliderItems.length - 1;
+        } else {
+            index = currentPosition / sliderWidth - 1;
+        };
+
+    }
+   const q = `${-sliderWidth * index}px`;
+    console.log(index);
+    console.log(q);
+    slider.css('left', q);
+};
 
 $('.btn-left').click(function(e) {
     e.preventDefault();
-    slider.goToNextSlide();
+    sliderTransform('left');
 });
 
 $('.btn-right').click(function(e) {
     e.preventDefault();
-    slider.goToPrevSlide();
+    sliderTransform('right');
 });
 
 // Слайдер секция отзывы
