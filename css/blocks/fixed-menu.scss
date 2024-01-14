@@ -15,7 +15,12 @@
             .fixed-menu__link {
                 border-color: #fff;
             }
+
+            .fixed-menu__black {
+                border-color: #000;
+            }
         }
+
     }
 
     &__link {
@@ -40,4 +45,13 @@
 
         }
     }
+}
+
+.fixed-menu__black {
+
+    &:before {
+        background-color: black;
+    }
+
+
 }

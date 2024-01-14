@@ -1,18 +1,20 @@
 .map {
     position: relative;
-    width: 100%;
+    // width: 100%;
     // height: 100%;
-    background: url("../img/map.jpg") center center no-repeat ;
-    background-size:cover;
+    // background: url("../img/map.jpg") center center no-repeat ;
+    // background-size:cover;
+    justify-content: flex-start;
     padding: 0;
+    // flex-shrink: 1;
 
     &__container {
         position: relative;
         display: flex;
         width: 68.75rem;
-        // height: 40.75rem;
+        height: 40.75rem;
         // width: 100%;
-        height: 100%;
+        height: 88%;
         align-items: end;
     }
 
@@ -27,7 +29,7 @@
         left: 0%;
         display: flex;
         background-color: #fff;;
-        height: rem(91px);
+        height: rem(110px);
 
         @include teleph {
             height: rem(151px);
@@ -91,6 +93,7 @@
 .social {
     display: flex;
     justify-content: flex-end;
+    margin-right: 3%;
 
     @include teleph {
         margin-bottom: rem(30px);
@@ -112,6 +115,13 @@
      :last-child {
         margin-right: 0;
     }
+
+    :hover {
+        fill: #000;
+        transition: 0.3s;
+        // background: url("../img/css_sprites.png") 46px -66px, rgb(31, 30, 30) 75% / cover no-repeat;    
+        border-radius: 3px;
+    }
 }
 
 .socials__link-vk {
@@ -129,13 +139,6 @@
     height: 20px;
     // background: url("../img/css_sprites.png") 46px -10px, lightgray 50% / cover no-repeat;
     border-radius: 3px;
-
-    :hover {
-        fill: #000;
-        transition: 0.3s;
-        // background: url("../img/css_sprites.png") 46px -66px, rgb(31, 30, 30) 75% / cover no-repeat;    
-        border-radius: 3px;
-    }
 }
 
 .socials__link-fb-icon {
@@ -145,12 +148,12 @@
     // background: url("../img/css_sprites.png") 46px -10px, lightgray 50% / cover no-repeat;
     border-radius: 3px;
 
-    :hover {
+    /*:hover {
         fill: #000;
         transition: 0.3s;
         // background: url("../img/css_sprites.png") 46px -66px, rgb(31, 30, 30) 75% / cover no-repeat;    
         border-radius: 3px;
-    }
+    }*/
 }
 
 .socials__link-in-icon {
@@ -160,12 +163,12 @@
     // background: url("../img/css_sprites.png") 46px -10px, lightgray 50% / cover no-repeat;
     border-radius: 3px;
 
-    :hover {
+    /*:hover {
         fill: #000;
         transition: 0.3s;
         // background: url("../img/css_sprites.png") 46px -66px, rgb(31, 30, 30) 75% / cover no-repeat;    
         border-radius: 3px;
-    }
+    }*/
 }
 
 .socials__link-tw-icon {
@@ -175,10 +178,10 @@
     // background: url("../img/css_sprites.png") 46px -10px, lightgray 50% / cover no-repeat;
     border-radius: 3px;
 
-    :hover {
+    /*:hover {
         fill: #000;
         transition: 0.3s;
         // background: url("../img/css_sprites.png") 46px -66px, rgb(31, 30, 30) 75% / cover no-repeat;    
         border-radius: 3px;
-    }
+    }*/
 }

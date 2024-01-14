@@ -42,7 +42,13 @@ body {
     // position: relative;
     overflow: hidden;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
+}
+
+.maincontent {
+    height: 100%;
+    transition: transform .5s;
+    will-change: transform;
 }
 
 /*.container {
